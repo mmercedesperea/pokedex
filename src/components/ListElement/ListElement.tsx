@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IPokemon } from '../../commom/types';
+import { IPokemon } from '../../common/types';
 import imgPokeball from '../../assets/pokeballp.png';
 import './ListElement.styles.scss';
 

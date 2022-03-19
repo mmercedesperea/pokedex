@@ -1,4 +1,4 @@
-import { IPokemons, IService } from '../../commom/types';
+import { IPokemons, IService } from '../../common/types';
 import getPokemons from '../../services/GetPokemonsList';
 import Pagination from '../Pagination/Pagination';
 

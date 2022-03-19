@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { IDParams, IPokemonDetail, IService } from '../../commom/types';
+import { IDParams, IPokemonDetail, IService } from '../../common/types';
 import getPokemonDetails from '../../services/GetPokemonDetails';
 import './PokemonDetail.styles.scss';
 

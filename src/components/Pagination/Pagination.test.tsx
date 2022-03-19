@@ -2,7 +2,7 @@ import Pagination from './Pagination';
 import Enzyme, { render } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { MemoryRouter as Router } from 'react-router-dom';
-import { IPagination, IPokemon } from '../../commom/types';
+import { IPagination, IPokemon } from '../../common/types';
 
 Enzyme.configure({ adapter: new Adapter() });
 

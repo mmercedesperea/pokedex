@@ -2,7 +2,7 @@ import PokemonDetail from './PokemonDetail';
 import Enzyme, { render } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { MemoryRouter as Router } from 'react-router-dom';
-import { IDParams } from '../../commom/types';
+import { IDParams } from '../../common/types';
 
 Enzyme.configure({ adapter: new Adapter() });
 

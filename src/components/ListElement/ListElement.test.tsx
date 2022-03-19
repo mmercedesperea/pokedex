@@ -1,4 +1,4 @@
-import { IPokemon } from '../../commom/types';
+import { IPokemon } from '../../common/types';
 import ListElement from './ListElement';
 import Enzyme, { render } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';

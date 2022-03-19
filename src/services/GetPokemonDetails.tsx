@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { IPokemonDetail, IService } from '../commom/types';
+import { IPokemonDetail, IService } from '../common/types';
 
 const getPokemonDetails = (id: string) => {
   const [result, setResult] = useState<IService<IPokemonDetail>>({

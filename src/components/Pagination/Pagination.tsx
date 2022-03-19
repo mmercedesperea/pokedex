@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IPagination, IPokemon } from '../../commom/types';
+import { IPagination, IPokemon } from '../../common/types';
 import ListElement from '../ListElement/ListElement';
 import './Pagination.styles.scss';
 
