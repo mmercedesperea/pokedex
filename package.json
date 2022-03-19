@@ -29,7 +29,8 @@
     "eject": "react-scripts eject",
     "lint": "npx eslint . --ext .tsx -c .eslintrc.json",
     "format:check": "npx prettier --check src/",
-    "format:fix": "npx prettier --write src/"
+    "format:fix": "npx prettier --write src/",
+    "cypress": "npx cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,7 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "cypress": "^9.5.2",
     "enzyme": "^3.11.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",

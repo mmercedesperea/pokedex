@@ -34,10 +34,16 @@ const Pagination = (props: IPagination): React.ReactElement => {
         </table>
       </div>
       <div className="pagination">
-        <button onClick={goToPreviousPage} className={`${currentPage === 1 ? 'disabled' : ''}`}>
+        <button
+          onClick={goToPreviousPage}
+          className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
+        >
           PREV
         </button>
-        <button onClick={goToNextPage} className={` ${currentPage === pages ? 'disabled' : ''}`}>
+        <button
+          onClick={goToNextPage}
+          className={`next ${currentPage === pages ? 'disabled' : ''}`}
+        >
           NEXT
         </button>
       </div>

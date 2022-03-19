@@ -13,7 +13,7 @@ const ListElement = (props: IPokemon): React.ReactElement => {
     <>
       <tr>
         <td>No. {numberExtractor(url)}</td>
-        <td>
+        <td className="pokemonNameLi">
           <Link to={`/pokemon/${numberExtractor(url)}`}>{name.toUpperCase()}</Link>
         </td>
         <td>
