@@ -1,0 +1,79 @@
+@import '../../App.scss';
+
+.dataContainer {
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.dataContainer table {
+  border-collapse: collapse;
+  // background-color: #eb853d4d;
+}
+.dataContainer td {
+  width: 270px;
+  height: 60px;
+  text-align: center;
+}
+
+.dataContainer a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.dataContainer a:hover {
+  color: white;
+}
+
+.dataContainer tr:hover a {
+  color: white;
+}
+
+.dataContainer tr:hover {
+  box-shadow: 2px 2px 20px 2px #d34212;
+  background-color: $orangeCharizardDark;
+  color: white;
+  font-size: 30px;
+}
+
+.pagination {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: $greenBulbasaur;
+  border: 2px solid #1ea484;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  &:hover {
+    box-shadow: 0 0 40px 40px $yellowPikachu inset;
+    border: 2px solid $bluePokemon;
+  }
+}
+
+.pagination .disabled {
+  pointer-events: none;
+  color: white;
+  background-color: $disableColor;
+}

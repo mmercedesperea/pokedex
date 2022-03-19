@@ -1,0 +1,55 @@
+$disableColor: grey;
+$bluePokemon: #2a629f;
+$yellowPikachu: #ffcc03;
+$orangeCharizard: #f8a060;
+$orangeCharizardDark: #ef501d;
+$greenBulbasaur: #3fccaa;
+$grass: #78c850;
+$fire: #f08030;
+$normal: #a8a878;
+$water: #6890f0;
+$electric: #f8d030;
+$ice: #98d8d8;
+$fighting: #c03028;
+$poison: #a040a0;
+$ground: #e0c068;
+$flying: #a890f0;
+$psychic: #f85888;
+$bug: #a8b820;
+$rock: #b8a038;
+$ghost: #705898;
+$dragon: #7038f8;
+$dark: #705848;
+$steel: #b8b8d0;
+$fairy: #ff9be1;
+
+.disabled {
+  pointer-events: none;
+  color: $disableColor;
+}
+
+.buttonP,
+.pagination button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: $greenBulbasaur;
+  border: 2px solid #1ea484;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  &:hover {
+    box-shadow: 0 0 40px 40px $yellowPikachu inset;
+    border: 2px solid $bluePokemon;
+  }
+}

@@ -1,0 +1,138 @@
+@import '../../App.scss';
+
+.pokemonDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.typeInfo span {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.infoBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.idCard {
+  position: absolute;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.card {
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 15px solid #fec224;
+  border-radius: 15px;
+  width: 400px;
+  margin: 30px;
+  background-color: #c3dfd8;
+}
+
+.card h2 {
+  margin-top: 2px;
+  text-align: center;
+}
+.card .pokemonImg {
+  width: 100%;
+}
+
+.card .infoPokemon {
+  padding: 2px 16px;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statsContainer progress {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  color: $bluePokemon;
+  position: relative;
+  border: none;
+}
+
+.statsContainer progress::-webkit-progress-value {
+  background: $yellowPikachu;
+}
+
+.statsContainer progress::-webkit-progress-bar {
+  background: $disableColor;
+}
+
+.statsContainer progress:after {
+  content: attr(value);
+  position: absolute;
+  top: 6px;
+}
+
+.grass {
+  background-color: $grass;
+}
+.fire {
+  background-color: $fire;
+}
+.normal {
+  background-color: $normal;
+}
+.water {
+  background-color: $water;
+}
+.electric {
+  background-color: $electric;
+}
+.ice {
+  background-color: $ice;
+}
+.fighting {
+  background-color: $fighting;
+}
+.poison {
+  background-color: $poison;
+}
+.ground {
+  background-color: $ground;
+}
+.flying {
+  background-color: $flying;
+}
+.psychic {
+  background-color: $psychic;
+}
+.bug {
+  background-color: $bug;
+}
+.rock {
+  background-color: $rock;
+}
+.ghost {
+  background-color: $ghost;
+}
+.dragon {
+  background-color: $dragon;
+}
+.dark {
+  background-color: $dark;
+}
+.steel {
+  background-color: $steel;
+}
+.fairy {
+  background-color: $fairy;
+}

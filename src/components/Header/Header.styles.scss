@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+.header {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url('../../assets/background.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $yellowPikachu;
+  font-size: 60px;
+  width: 100%;
+  height: 180px;
+  font-family: 'Knewave', cursive;
+  -webkit-text-stroke: 3px $bluePokemon;
+}
