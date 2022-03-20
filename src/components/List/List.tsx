@@ -1,9 +1,9 @@
 import { IPokemons, IService } from '../../common/types';
-import getPokemons from '../../services/GetPokemonsList';
+import usePokemonsList from '../../services/GetPokemonsList';
 import Pagination from '../Pagination/Pagination';
 
 const List = (): React.ReactElement => {
-  const data: IService<IPokemons> = getPokemons();
+  const data: IService<IPokemons> = usePokemonsList();
 
   return (
     <div className="listInfo">
