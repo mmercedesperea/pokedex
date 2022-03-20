@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import { IDParams, IPokemonDetail, IService } from '../../common/types';
-import getPokemonDetails from '../../services/GetPokemonDetails';
+import usePokemonDetails from '../../services/GetPokemonDetails';
 import './PokemonDetail.styles.scss';
 
 const PokemonDetail = (props: IDParams): React.ReactElement => {
-  const data: IService<IPokemonDetail> = getPokemonDetails(props.id);
+  const data: IService<IPokemonDetail> = usePokemonDetails(props.id);
 
   const navigate = useNavigate();
 
