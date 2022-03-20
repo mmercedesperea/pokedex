@@ -22,6 +22,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+It is required to install dependencies the first time, using npm i.
+
 ### `Launch Unit Tests: npm run test`
 
 Launch Unit Tests with Jest and Enzyme. Create and update coverage.
