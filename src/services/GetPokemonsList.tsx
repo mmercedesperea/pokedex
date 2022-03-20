@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { IPokemons, IService } from '../common/types';
 
-const getPokemonsList = () => {
+const usePokemonsList = () => {
   const [result, setResult] = useState<IService<IPokemons>>({
     status: 'loading'
   });
@@ -15,4 +15,4 @@ const getPokemonsList = () => {
   return result;
 };
 
-export default getPokemonsList;
+export default usePokemonsList;
