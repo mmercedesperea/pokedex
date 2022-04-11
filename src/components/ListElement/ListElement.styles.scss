@@ -10,3 +10,31 @@
 .pokeballListImg {
   height: 30px;
 }
+
+.pokemonNameLi a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.pokemonNameLi a:hover {
+  color: white;
+}
+
+tr:hover .pokemonNameLi a{
+  color: white;
+}
+
+ tr:hover {
+  box-shadow: 2px 2px 20px 2px #d34212;
+  background-color: $orangeCharizardDark;
+  color: white;
+  font-size: 30px;
+}
+
+.pokemonTrList td {
+  width: 270px;
+  height: 60px;
+  text-align: center;
+}

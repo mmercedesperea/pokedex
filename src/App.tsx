@@ -6,15 +6,13 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/pokemon/:id" element={<Detail />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/pokemon/:id" element={<Detail />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

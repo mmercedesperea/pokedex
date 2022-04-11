@@ -5,16 +5,14 @@ import './Pagination.styles.scss';
 
 const Pagination = (props: IPagination): React.ReactElement => {
   const { data, dataLimit } = props;
-  const [pages] = useState(Math.ceil(data.length / dataLimit));
+
+  console.log(props);
+  const pages = Math.ceil(data.length / dataLimit);
   const [currentPage, setCurrentPage] = useState(1);
 
-  function goToNextPage(): void {
-    setCurrentPage((page) => page + 1);
-  }
+  const goToNextPage = (): void => setCurrentPage((page) => page + 1);
 
-  function goToPreviousPage(): void {
-    setCurrentPage((page) => page - 1);
-  }
+  const goToPreviousPage = (): void => setCurrentPage((page) => page - 1);
 
   const getPaginatedData = (): IPokemon[] => {
     const startIndex = currentPage * dataLimit - dataLimit;

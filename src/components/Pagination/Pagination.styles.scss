@@ -10,39 +10,10 @@
 
 .dataContainer table {
   border-collapse: collapse;
-  // background-color: #eb853d4d;
-}
-.dataContainer td {
-  width: 270px;
-  height: 60px;
-  text-align: center;
-}
-
-.dataContainer a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: black;
-}
-
-.dataContainer a:hover {
-  color: white;
-}
-
-.dataContainer tr:hover a {
-  color: white;
-}
-
-.dataContainer tr:hover {
-  box-shadow: 2px 2px 20px 2px #d34212;
-  background-color: $orangeCharizardDark;
-  color: white;
-  font-size: 30px;
 }
 
 .pagination {
   display: flex;
-
   align-items: center;
   justify-content: center;
 }

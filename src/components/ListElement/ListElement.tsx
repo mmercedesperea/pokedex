@@ -11,7 +11,7 @@ const ListElement = (props: IPokemon): React.ReactElement => {
   const { name, url } = props;
   return (
     <>
-      <tr>
+      <tr className="pokemonTrList">
         <td>No. {numberExtractor(url)}</td>
         <td className="pokemonNameLi">
           <Link to={`/pokemon/${numberExtractor(url)}`}>{name.toUpperCase()}</Link>
