@@ -5,10 +5,7 @@ import { IPokemon } from '../../common/types';
 
 export default {
   title: 'Components/ListElement',
-  component: ListElement,
-  argTypes: {
-    color: { control: 'color' }
-  }
+  component: ListElement
 } as Meta;
 
 const Template: Story<IPokemon> = (args) => (

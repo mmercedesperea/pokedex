@@ -13,7 +13,6 @@ const usePokemonDetails = (id: string) => {
       .then((response) => setResult({ status: 'loaded', payload: response }))
       .catch((error) => setResult({ status: 'error', error }));
   }, []);
-
   return result;
 };
 
