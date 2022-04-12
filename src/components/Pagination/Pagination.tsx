@@ -5,8 +5,6 @@ import './Pagination.styles.scss';
 
 const Pagination = (props: IPagination): React.ReactElement => {
   const { data, dataLimit } = props;
-
-  console.log(props);
   const pages = Math.ceil(data.length / dataLimit);
   const [currentPage, setCurrentPage] = useState(1);
 

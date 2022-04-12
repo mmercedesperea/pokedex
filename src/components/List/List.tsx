@@ -1,5 +1,5 @@
 import { IPokemons, IService } from '../../common/types';
-import usePokemonsList from '../../services/GetPokemonsList';
+import usePokemonsList from '../../services/UsePokemonsList';
 import Pagination from '../Pagination/Pagination';
 
 const List = (): React.ReactElement => {

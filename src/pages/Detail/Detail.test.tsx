@@ -1,20 +1,23 @@
 import Detail from './Detail';
-import Enzyme, { render } from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+import { render } from '@testing-library/react';
 import { MemoryRouter as Router } from 'react-router-dom';
+import usePokemonDetails from '../../services/UsePokemonDetails';
 
-Enzyme.configure({ adapter: new Adapter() });
+jest.mock('../../services/UsePokemonDetails');
 
-describe('Detail Component', () => {
-  const component = render(
+const mockusePokemonDetails = usePokemonDetails as jest.Mock<any>;
+
+afterEach(() => {
+  mockusePokemonDetails.mockReset();
+});
+
+test('Rendering Detail', () => {
+  mockusePokemonDetails.mockReturnValue({ status: 'loading' });
+  const { getByText } = render(
     <Router>
       <Detail />
     </Router>
   );
 
-  describe('Rendering Detail', () => {
-    it('Should instance to be defined', () => {
-      expect(component).toBeDefined();
-    });
-  });
+  expect(getByText('Loading...')).toBeTruthy();
 });
