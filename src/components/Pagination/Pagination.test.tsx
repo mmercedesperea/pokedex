@@ -2,6 +2,7 @@ import Pagination from './Pagination';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { IPagination } from '../../common/types';
 import { fireEvent, render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
 const defaultProps: IPagination = {
   data: [
@@ -45,22 +46,23 @@ test('Pagination contain PREV', () => {
 });
 
 test('Pagination contain BULBASAUR', () => {
-  const { getByText } = render(
+  const { getByTestId, getByText } = render(
     <Router>
       <Pagination {...defaultProps} />
     </Router>
   );
+  expect(getByTestId('tbodyPokemon')).toHaveTextContent('BULBASAUR');
   expect(getByText('BULBASAUR')).toBeTruthy();
 });
 
 test('Pagination contain VULPIX after clicking NEXT button', () => {
-  const { getByText } = render(
+  const { getByTestId, getByText } = render(
     <Router>
       <Pagination {...defaultProps} />
     </Router>
   );
 
-  fireEvent.click(getByText('NEXT'));
+  fireEvent.click(getByTestId('button-next'));
 
   expect(getByText('VULPIX')).toBeTruthy();
 });
@@ -75,4 +77,23 @@ test('Pagination contain BULBASAUR after clicking PREV button', () => {
   fireEvent.click(getByText('PREV'));
 
   expect(getByText('BULBASAUR')).toBeTruthy();
+});
+
+it('should be disabled', () => {
+  const { getByTestId } = render(
+    <Router>
+      <Pagination {...defaultProps} />
+    </Router>
+  );
+  expect(getByTestId('button-prev')).toHaveClass('disabled');
+});
+
+it('should be enabled', () => {
+  const { getByTestId } = render(
+    <Router>
+      <Pagination {...defaultProps} />
+    </Router>
+  );
+  expect(getByTestId('button-next')).not.toHaveClass('disabled');
+  expect(getByTestId('button-next')).not.toBeDisabled();
 });

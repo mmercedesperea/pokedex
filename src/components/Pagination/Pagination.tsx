@@ -22,7 +22,7 @@ const Pagination = (props: IPagination): React.ReactElement => {
     <div>
       <div className="dataContainer">
         <table>
-          <tbody>
+          <tbody data-testid="tbodyPokemon">
             {getPaginatedData().map((d: IPokemon, idx: number) => (
               <ListElement key={idx} name={d.name} url={d.url} />
             ))}
@@ -31,12 +31,14 @@ const Pagination = (props: IPagination): React.ReactElement => {
       </div>
       <div className="pagination">
         <button
+          data-testid="button-prev"
           onClick={goToPreviousPage}
           className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
         >
           PREV
         </button>
         <button
+          data-testid="button-next"
           onClick={goToNextPage}
           className={`next ${currentPage === pages ? 'disabled' : ''}`}
         >

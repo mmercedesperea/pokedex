@@ -11,7 +11,7 @@ afterEach(() => {
   mockusePokemonsList.mockReset();
 });
 
-test('Rendering Detail', () => {
+test('should render home and show loading..', () => {
   mockusePokemonsList.mockReturnValue({ status: 'loading' });
   const { getByText } = render(
     <Router>
